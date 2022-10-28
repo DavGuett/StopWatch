@@ -1,12 +1,16 @@
-﻿static void Start()
+﻿static void Start(int time)
 {
-    int time = 10;
     int currentTime = 0;
 
     while (currentTime != time)
     {
-        Console.WriteLine(currentTime);
+        Console.Clear();
         currentTime++;
+        Console.WriteLine(currentTime);
+        Thread.Sleep(1000);
     }
 }
+
+
+Start(5);
 
